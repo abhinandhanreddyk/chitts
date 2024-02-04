@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="button-container">
+        <a class="button-link" href="{% url 'create_person' %}"><button>Enquiry</button></a>
+        <a class="button-link" href="{% url 'create_person' %}"><button>Entry</button></a>
+        <a class="button-link" href="{% url 'calculate_interest' %}"><button>Calculator</button></a>
+    </div>
+{% endblock %}

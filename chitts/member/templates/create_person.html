@@ -1,0 +1,18 @@
+<!-- create_person.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Person</title>
+</head>
+<body>
+    <h1>Create Person</h1>
+
+    <form method="post" action="{% url 'create_person' %}">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

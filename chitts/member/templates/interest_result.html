@@ -1,0 +1,11 @@
+<!-- templates/interest_calculator/result.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Calculation Result</h2>
+    <p>Amount: {{ interest_input.principal_amount }}</p>
+    <p>Interest : 2 rupees </p>
+    <p>Time : 1 year</p>
+    <p>Interest: {{ interest_input.calculate_interest }}</p>
+    <p>Total: {{ interest_input.calculate_total_amount}}</p>
+{% endblock %}

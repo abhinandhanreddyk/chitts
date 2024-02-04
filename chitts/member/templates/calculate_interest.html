@@ -1,0 +1,14 @@
+<!-- templates/interest_calculator/calculate_interest.html -->
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <h2>Interest Calculator</h2>
+    <form method="post" action="{% url 'calculate_interest' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Calculate</button>
+    </form>
+{% endblock %}

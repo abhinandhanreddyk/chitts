@@ -1,0 +1,41 @@
+<!-- templates/base.html -->
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Website{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <!-- Add any additional styles or scripts here -->
+</head>
+<body style="margin:0;">
+
+<header class="header">
+        <button class="menu-btn">&#9776;</button>
+<!--    <a href="{% url 'home' %}" style="text-decoration: none;display:flex; color: white; width: 40px">-->
+<!--        &lt;!&ndash;            <button>Home</button>&ndash;&gt;-->
+<!--    </a>-->
+</header>
+<div class="sidebar">
+    <a href="{% url 'create_person' %}">Button 1</a>
+    <a href="{% url 'create_person' %}">Button 2</a>
+    <a href="{% url 'create_person' %}">Button 3</a>
+    <a href="{% url 'create_person' %}">Button 4</a>
+    <a href="{% url 'calculate_interest' %}">Calculator</a>
+    <!-- Add more buttons as needed -->
+
+    <div class="logout-container">
+        <a href="{% url 'home' %}">Logout</a>
+    </div>
+</div>
+<div class="content">
+
+    {% block content %}{% endblock %}
+</div>
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>

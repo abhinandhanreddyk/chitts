@@ -1,0 +1,88 @@
+/* static/css/styles.css */
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    transition: margin-left 0.5s;
+
+}
+/* static/css/styles.css */
+.button-container {
+    text-align: center; /* Center the buttons */
+    width: 200;
+    border: 2px solid brown; /* Specify a unit for border */
+    z-index: 99999;
+}
+
+.button-link {
+    display: block;
+    width: 150px;
+    margin: 20px auto; /* Add space around each button */
+    text-decoration: none;
+}
+
+button {
+    display: inline-block; /* Make the buttons inline */
+    width: 150px; /* Set a fixed width for consistency */
+    height: 50px;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.menu-btn {
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    width: 30px;
+    margin-left: -10px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+    border: 2px solid brown; /* Specify a unit for border */
+    background-color: #f0f0f0;
+    color: #333;
+
+}
+
+.sidebar a {
+    padding: 18px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    transition: 0.3s;
+    border: 2px solid brown; /* Specify a unit for border */
+    color: red;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+.sidebar .logout-container {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 20px;
+}
+
+.content {
+margin-left: 0px;
+    transition: margin-left 0.5s;
+}
